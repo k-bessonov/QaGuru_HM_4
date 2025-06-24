@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class VerifyJUnit5SnippetTest {
 
     @BeforeAll
-    static void beforeAll() {
+    static void setupConfig() {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
